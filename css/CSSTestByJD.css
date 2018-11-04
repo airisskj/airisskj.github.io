@@ -1,0 +1,31 @@
+html {
+    font-size: 10px;
+    font-family: placeholder;
+    background-color: #222222
+}
+body{
+    width: 600px;       
+    margin: 0 auto;     /*첫 번째는 상하값, 두 번째는 좌우측인데 auto면 좌우측 값을 같게 조정해 줌*/
+    background-color: #EEEEEE;
+    padding: 0 20px 20px 20px;  /* 상단, 왼쪽, 아래, 오른쪽 */
+    border: 1px solid white;  /* 두께, 실선, 컬러 */
+}
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 3px #333333; /* 수평, 수직, 흐림, 컬러 */
+    font-size: 30px;
+    text-align: center;
+}
+  
+p, li {
+    font-size: 16px;    
+    line-height: 2; 
+    letter-spacing: 1px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
