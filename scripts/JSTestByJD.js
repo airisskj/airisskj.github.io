@@ -40,3 +40,22 @@ function setUserName(){ // 타이틀의 이름 바꾸기 함수. 로컬스토리
 myButton.onclick = function(){
     setUserName();
 }
+
+//--------------------------------- 이미지 로드 테스트 부분
+
+function readURL(input) {
+ 
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+ 
+        reader.onload = function (e) {
+            $('#image_section').attr('src', e.target.result);
+        }
+ 
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+ 
+$("#imgInput").change(function(){
+    readURL(this);
+});
